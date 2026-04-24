@@ -1,0 +1,133 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#333;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#2f4f7f;
+color:white;
+padding:15px 40px;
+}
+
+.logo{
+font-size:20px;
+font-weight:bold;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-size:14px;
+}
+
+.nav a:hover{
+text-decoration:underline;
+}
+
+.search{
+font-size:14px;
+}
+
+/* FILTER SECTION */
+
+.filter{
+background:white;
+margin:30px;
+padding:25px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.filter h2{
+margin-top:0;
+}
+
+.filter-group{
+margin-top:15px;
+}
+
+.filter-group p{
+margin-bottom:6px;
+font-weight:bold;
+}
+
+button{
+margin:4px;
+padding:6px 12px;
+border:none;
+background:#e0e0e0;
+border-radius:20px;
+cursor:pointer;
+font-size:13px;
+}
+
+button:hover
+
+/* ARCHIVE CARDS */
+
+.archive{
+display:flex;
+gap:30px;
+padding:30px;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:250px;
+padding:18px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.image{
+height:120px;
+background:#ccc;
+border-radius:6px;
+margin-bottom:12px;
+}
+
+.card h3{
+margin:5px 0;
+}
+
+.card p{
+font-size:14px;
+line-height:1.4;
+}
+
+.tag{
+display:block;
+font-size:12px;
+color:#777;
+margin:8px 0;
+}
+
+.card a{
+text-decoration:none;
+color:#2f4f7f;
+font-weight:bold;
+font-size:14px;
+}
+
+.card a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+background:#ddd;
+padding:20px;
+margin-top:30px;
+font-size:14px;
+}
