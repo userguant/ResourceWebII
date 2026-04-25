@@ -5,7 +5,6 @@ body {
   color: #333;
 }
 
-/* COMPONENT 1: HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -32,7 +31,6 @@ body {
 
 .search { font-size: 14px; color: white; }
 
-/* COMPONENT 4: FILTER */
 .filter {
   background: white;
   padding: 16px 40px;
@@ -80,7 +78,6 @@ button:hover, button.active {
   border-color: #2f4f7f;
 }
 
-/* COMPONENT 2: ARCHIVE CARDS */
 .archive {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -139,7 +136,6 @@ button:hover, button.active {
 
 .card a:hover { text-decoration: underline; }
 
-/* COMPONENT 3: DETAIL ENTRY */
 .detail {
   background: white;
   margin: 0 40px 32px;
@@ -225,7 +221,6 @@ button:hover, button.active {
 
 .detail-link:hover { text-decoration: underline; }
 
-/* FOOTER */
 .footer {
   text-align: center;
   background: #ddd;
