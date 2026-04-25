@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital Nostalgia Archive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- COMPONENT 1: Navigation Header -->
+<header class="header">
+  <div class="logo">Digital<br>Nostalgia</div>
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">Archive</a>
+    <a href="#">Submit Memory</a>
+    <a href="#">About</a>
+  </nav>
+  <div class="search">Search 🔍</div>
+</header>
+
+<!-- COMPONENT 4: Filter -->
+<section class="filter">
+  <div class="filter-group">
+    <p>Year</p>
+    <div class="filter-pills">
+      <button class="active" onclick="filterCards(this,'all')">All</button>
+      <button onclick="filterCards(this,'1990s')">1990s</button>
+      <button onclick="filterCards(this,'2000s')">2000s</button>
+      <button onclick="filterCards(this,'2010s')">2010s</button>
+    </div>
+  </div>
+  <div class="filter-group">
+    <p>Platform</p>
+    <div class="filter-pills">
+      <button onclick="filterCards(this,'windows')">Windows</button>
+      <button onclick="filterCards(this,'web')">Web</button>
+      <button onclick="filterCards(this,'mobile')">Mobile</button>
+    </div>
+  </div>
+  <div class="filter-group">
+    <p>Category</p>
+    <div class="filter-pills">
+      <button onclick="filterCards(this,'games')">Games</button>
+      <button onclick="filterCards(this,'messaging')">Messaging</button>
+      <button onclick="filterCards(this,'social')">Social Media</button>
+    </div>
+  </div>
+</section>
+
+<!-- COMPONENT 2: Archive Cards -->
+<section class="archive" id="card-grid">
+
+  <div class="card" data-tags="2000s windows messaging">
+    <img src="msn.png" alt="MSN Messenger">
+    <h3>MSN Messenger</h3>
+    <p>Instant messaging software popular in the early 2000s, famous for its nudge feature and custom emoticons.</p>
+    <span class="tag">#Messaging</span>
+    <span class="tag">#1999</span>
+    <a onclick="showDetail('msn')">View Item →</a>
+  </div>
+
+  <div class="card" data-tags="1990s web social">
+    <img src="geocities.png" alt="GeoCities">
+    <h3>GeoCities</h3>
+    <p>Free web hosting where anyone could build their own homepage with HTML, animated GIFs, and custom cursors.</p>
+    <span class="tag">#Social</span>
+    <span class="tag">#1994</span>
+    <a onclick="showDetail('geo')">View Item →</a>
+  </div>
+
+  <div class="card" data-tags="2000s web games">
+    <img src="neopets.png" alt="Neopets">
+    <h3>Neopets</h3>
+    <p>Virtual pet website where users adopted digital creatures, played browser games, and earned Neopoints.</p>
+    <span class="tag">#Games</span>
+    <span class="tag">#1999</span>
+    <a onclick="showDetail('neo')">View Item →</a>
+  </div>
+
+</section>
+
+<!-- COMPONENT 3: Detail Entry (hidden by default) -->
+<section class="detail" id="detail">
+  <div class="detail-body">
+    <img class="detail-img" id="detail-img" src="" alt="">
+    <div class="detail-content">
+      <h2 id="detail-title"></h2>
+      <p id="detail-desc1"></p>
+      <p id="detail-desc2"></p>
+      <div class="detail-tags" id="detail-tags"></div>
+    </div>
+  </div>
+  <div class="detail-footer">
+    <div class="detail-meta">
+      <div class="meta-item">
+        <span class="meta-label">YEAR</span>
+        <span class="meta-value" id="detail-year"></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">PLATFORM</span>
+        <span class="meta-value" id="detail-platform"></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">CATEGORY</span>
+        <span class="meta-value" id="detail-category"></span>
+      </div>
+    </div>
+    <a class="detail-link" href="#" target="_blank">Visit Original Source →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Digital Nostalgia Archive</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
